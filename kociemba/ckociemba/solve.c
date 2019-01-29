@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "search.h"
-
+/*
 int main(int argc, char **argv)
 {
     if (argc > 1) {
@@ -29,3 +29,4 @@ int main(int argc, char **argv)
         return 1;
     }
 }
+*/

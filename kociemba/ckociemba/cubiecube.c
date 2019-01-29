@@ -228,11 +228,11 @@ void invCubieCube(cubiecube_t* cubiecube, cubiecube_t* c)
 {
     int edge, corn;
     for (edge = 0; edge < EDGE_COUNT; edge++)
-        c->ep[cubiecube->ep[edge]] = edge;
+        c->ep[cubiecube->ep[edge]] = (edge_t)edge;
     for (edge = 0; edge < EDGE_COUNT; edge++)
         c->eo[edge] = cubiecube->eo[c->ep[edge]];
     for (corn = 0; corn < CORNER_COUNT; corn++)
-        c->cp[cubiecube->cp[corn]] = corn;
+        c->cp[cubiecube->cp[corn]] = (corner_t)corn;
     for (corn = 0; corn < CORNER_COUNT; corn++) {
         signed char ori = cubiecube->co[c->cp[corn]];
         if (ori >= 3)// Just for completeness. We do not invert mirrored
